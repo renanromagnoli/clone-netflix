@@ -50,7 +50,7 @@ export default {
                 slug: 'documentary',
                 title: 'Documentários',
                 items: await basicFetch(`/discover/movie?with_genres=99&language=${LANG}&api_key=${API_KEY}`)
-            },
+            }
         ]
     },
     getMovieInfo: async (movieId, type) => {

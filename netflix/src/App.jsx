@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react'
 
-import MovieRow from './components/MovieRow'
 import './App.css'
 
 import Tmdb from './Tmdb'
+import MovieRow from './components/MovieRow'
 import FeatureMovie from './components/FeatureMovie'
+import Header from './components/Header'
 
 export default () => {
 
@@ -22,6 +23,7 @@ export default () => {
         let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1))
         let chosen = originals[0].items.results[randomChosen]
         let chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv')
+        setFeaturedData(chosenInfo)
       }
 
       loadAll()
@@ -29,6 +31,7 @@ export default () => {
 
   return (
     <div className="page">
+      {/* <Header /> */}
 
       {featuredData && 
         <FeatureMovie item={featuredData}/>

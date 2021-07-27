@@ -19,7 +19,7 @@ export default ({title, items}) => {
     }
     const handleRightArrow = () => {
 
-        let x = scrollX + Math.round(window.innerWidth / 2) // valor equivalente a metade da tela
+        let x = scrollX - Math.round(window.innerWidth / 2) // valor equivalente a metade da tela
         let listW = items.results.length * 150
         if((window.innerWidth - listW) > x) {
             x = (window.innerWidth - listW) - 60

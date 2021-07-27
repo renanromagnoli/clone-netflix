@@ -6,7 +6,7 @@ export default () => {
         <header>
             <div className="header--logo">
                 <a href="/">
-                    <img src="../assets/logo_netflix.png" alt="Netflix" />
+                    <img src="https://www.logo.wine/a/logo/Netflix/Netflix-Logo.wine.svg" alt="Netflix" />
                 </a>
             </div>
         </header>

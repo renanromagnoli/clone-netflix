@@ -20,6 +20,7 @@
 }
 
 .featured--name {
+    width: 50vw;
     font-size: 60px;
     font-weight: bold;
 }
@@ -30,13 +31,13 @@
     margin-top: 15px;
 }
 
-.featured--ponits, .featured--year, .featured--seasons {
+.featured--points, .featured--year, .featured--seasons {
     display: inline-block;
     margin-right: 15px;
 
 }
 
-.featured--ponits {
+.featured--points {
     color: #43d369;
 }
 
@@ -45,6 +46,12 @@
     font-size: 20px;
     color: #999;
     max-width: 40vw;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 .featured--buttons {
@@ -73,13 +80,13 @@
 }
 
 .featured--mylistbutton {
-    background-color: darkgray;
+    background-color: #43d369;
     color: white;
 }
 
 .featured--genres {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 15px;
     color: #999;
 }
 

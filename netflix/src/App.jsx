@@ -31,7 +31,7 @@ export default () => {
 
   return (
     <div className="page">
-      {/* <Header /> */}
+      <Header />
 
       {featuredData && 
         <FeatureMovie item={featuredData}/>
